@@ -59,7 +59,7 @@ void loop() {
   duracion = pulseIn(echoPin, HIGH, 30000); // timeout 30ms
 
   if(duracion == 0){
-    distancia = 400; // si no hay eco, asumimos lejos
+    distancia = 400; // en caso de no haber eco 
   } else {
     distancia = duracion * 0.034 / 2;
   }
